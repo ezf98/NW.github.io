@@ -119,6 +119,15 @@
 									</div>
 								</article>
 								<article>
+									<a href="images/gallery/fulls/07.jpg" class="image">
+										<img src="images/Her13.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Demon Slayer!</h3>
+										<p>You look super cute with your anime shirts, I'm very happy you like them</p>
+									</div>
+								</article>
+								<article>
 									<a href="images/gallery/fulls/08.jpg" class="image">
 										<img src="images/Her4.jpg" alt="" />
 									</a>
@@ -143,6 +152,15 @@
 									<div class="caption">
 										<h3>On Wednesdays...</h3>
 										<p>You smash the patriarchy! Because you are strong and independent</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/08.jpg" class="image">
+										<img src="images/Us7.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Happy Together</h3>
+										<p>Totoro smiling after ice cream</p>
 									</div>
 								</article>
 								<article>
@@ -342,6 +360,79 @@
     </div>
 </section>
 
+
+<section id="poem-of-the-month" class="section">
+	<h2>Poem of the Month</h2>
+	<div class="month-selector">
+	  <button onclick="showPoem('poem-april-2025')">April 2025</button>
+	  <button onclick="showPoem('poem-march-2025')">March 2025</button>
+	</div>
+  
+	<div class="poem-card" id="poem-march-2025">
+		<h3>March 2025</h3>
+		<p class="poem-content">
+			i want to make<br>
+			art<br>
+			out of you<br>
+			and show it off<br>
+			in every corner<br>
+			of the Universe<br>
+			so everyone else<br>
+			can see<br>
+			how magnificent<br>
+			you are<br>
+			<br>
+			anyone who ever<br>
+			made you question that<br>
+			did not know<br>
+			true beauty<br>
+			when they saw it.<br>
+		</p>
+		<p class="poem-author">"Untitled" - By Kirsten Robinson</p>
+		<img src="images/Poem1.jpg" class="poem-image">
+	  </div>
+
+
+	<div class="poem-card" id="poem-april-2025">
+	  <h3>April 2025</h3>
+	  <p class="poem-content">
+		I love you not for how you shine,<br>
+        But for the soul that feels like mine.<br>
+        For every thought, each tender part,<br>
+		The way you speak straight to the heart.<br>
+       <br>
+		Your skincare rituals, soft and slow,<br>
+		Your fashion sense, your steady glow.<br>
+		Your love for purple, cool and rare<br>
+		Like dusk caught gently in your hair.<br>
+        <br>
+		You talk of movies and anime,<br>
+		And light the room in your own way.<br>
+		You carry strength and quiet grace,<br>
+		And beauty lives in your embrace.<br>
+        <br>
+		You doubt yourself, I see it clear.<br>
+		But let me be the voice you hear<br>
+		That tells you, love, you’re more than “fine,”<br>
+		You’re unique, and bright, and wholly mine.<br>
+        <br>
+		Not mine to keep or shape or mold,<br>
+		But mine to cherish, fierce and bold.<br>
+		To lift you up when days feel long,<br>
+		To be your calm, to be your song.<br>
+        <br>
+		I’ll cheer you on when you can’t stand,<br>
+		And hold your dreams with steady hands.<br>
+		You are enough, you’ve come so far<br>
+		And I love you, Lapochka, just as you are.<br>
+	  </p>
+	  <p class="poem-author">"Just as You Are" - By Kotik and ChatGPT</p>
+	  <img src="images/Poem2.jpg" class="poem-image">
+	</div>
+  
+
+  </section>
+  
 
 
 				<!-- Additional Elements -->
@@ -549,6 +640,23 @@ function closePopup() {
     document.getElementById("customPopup").style.display = "none";
     isPopUpShown = false;  // Reset the state so it can show again in the future
 }
+
+function showPoem(poemId) {
+    // Hide all poems
+    const allPoems = document.querySelectorAll('.poem-card');
+    allPoems.forEach(poem => {
+        poem.style.display = 'none';
+    });
+
+    // Show the selected poem
+    const selectedPoem = document.getElementById(poemId);
+    if (selectedPoem) {
+        selectedPoem.style.display = 'block';
+    }
+}
+
+
+
 </script>
 
 
