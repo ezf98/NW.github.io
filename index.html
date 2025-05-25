@@ -82,6 +82,16 @@
 										<p>Even though I didn't understand anything, hearing you laugh was worth it all.</p>
 									</div>
 								</article>
+                                <article>
+									<a href="images/gallery/fulls/04.jpg" class="image">
+										<img src="images/Her16.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Hotter than the Sun!</h3>
+										<p>OH WOW!! 😍😍😍 Is it hot in here? Ah, no it's just you 😘😍 </p>
+									</div>
+								</article>
+							
 								<article>
 									<a href="images/gallery/fulls/05.jpg" class="image">
 										<img src="images/Her1.jpg" alt="" />
@@ -134,6 +144,15 @@
 									<div class="caption">
 										<h3>Cute in winter</h3>
 										<p>Be it hot or cold, you always look cute. And that hat OMG, is soooo nice</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/gallery/fulls/07.jpg" class="image">
+										<img src="images/Her17.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>I'm jealous...</h3>
+										<p>Of that chicken nugget :P</p>
 									</div>
 								</article>
 								<article>
@@ -386,6 +405,7 @@
 <section id="poem-of-the-month" class="section">
 	<h2>Poem of the Month</h2>
 	<div class="month-selector">
+		<button onclick="showPoem('poem-june-2025')">June 2025</button>
 	    <button onclick="showPoem('poem-may-2025')">May 2025</button>
 		<button onclick="showPoem('poem-april-2025')">April 2025</button>
 	  <button onclick="showPoem('poem-march-2025')">March 2025</button>
@@ -480,11 +500,44 @@
 		<p class="poem-author">"A moment of happiness" - By Rumi</p>
 		<img src="images/Poem3.jpg" class="poem-image">
 	  </div>
+
+	  <div class="poem-card" id="poem-june-2025">
+		<h3>June 2025</h3>
+		<p class="poem-content">
+			I belong in your arms<br>
+			Finally, I have found a place<br>
+			Into which I fit perfectly, safely<br>
+			And securely with no doubts,<br>
+			No fears, no sadness, no tears.<br>
+			<br>
+			This place is filled with happiness and laughter<br>
+			Yet it is spacious enough, to allow me<br>
+			The freedom to move around,<br>
+			To live my life and be myself.<br>
+			This wonderful place, which I never believed really existed,<br>
+			I have found finally<br>
+			Inside your arms, Inside your heart, inside your love.<br>
+			<br>
+		</p>
+		<p class="poem-author">"I Belong In Your Arms" - By Deborah Brideau</p>
+		<img src="images/Poem4.jpg" class="poem-image">
+	  </div>
   
 
   </section>
   
-
+  <section id="places" class="places-section">
+	<h2 onclick="togglePlaces()" class="toggle-header">
+	  Places We've Been! 💫 <span id="toggle-icon">➕</span>
+	</h2>
+	<h4>
+	This is just a small list of places we've been together. If you like the idea, we can add more :)<br> It'll be a good way to keep memories of all of our adventures, but let me know what you think. Click on the button to expand!	
+	</h4>
+	
+	<div id="places-container" class="places-grid" style="display: none;">
+	</div>
+  </section>
+  
 
 				<!-- Additional Elements -->
 					<section class="wrapper style1 align-center">
@@ -564,7 +617,7 @@
 										<div class="popup-content">
 											<span class="close-btn" onclick="closePopup()">&times;</span>
 											<h2>Lapochka 💜</h2>
-											<p>Just a reminder... you are the bestest, and I choose you every day. 💖</p>
+											<p>Just a reminder... you are the kindest, funniest, smartest, prettiest woman in the whole world, and I'm so so lucky to have you 💖</p>
 										</div>
 									</div>
 											<hr />
@@ -706,6 +759,53 @@ function showPoem(poemId) {
     }
 }
 
+const places = [
+  {
+    title: "Kyjský rybník",
+    description: "Where we had our first date, and we spend some time with each other💕. Also onions were involved :P",
+    image: "images/gallery/Kyjský_rybník.jpeg"
+  },
+  {
+    title: "Kavárna Kočičí",
+    description: "It was a really nice atmosphere, but the matcha wasn't :D In any case, I really enjoyed, we should go back!",
+    image: "images/gallery/Kavarna Kocici.jpg"
+  },
+  {
+    title: "Statní Opera",
+    description: "Because we can't truly be rich Europeans if we don't go to the opera! And always the best part is just being next to you 💜",
+    image: "images/gallery/Statni Opera.jpg"
+  }
+  // Add more as needed!
+];
+
+function renderPlaces() {
+  const container = document.getElementById("places-container");
+  container.innerHTML = ""; // Clear previous content
+
+  places.forEach(place => {
+    const card = document.createElement("div");
+    card.className = "place-card";
+    card.innerHTML = `
+      <img src="${place.image}" alt="${place.title}">
+      <h3>${place.title}</h3>
+      <p>${place.description}</p>
+    `;
+    container.appendChild(card);
+  });
+}
+
+// Call this once when the page loads
+renderPlaces();
+
+// Toggle section open/close
+function togglePlaces() {
+  const container = document.getElementById("places-container");
+  const icon = document.getElementById("toggle-icon");
+  const isHidden = container.style.display === "none";
+
+  container.style.display = isHidden ? "grid" : "none";
+  icon.textContent = isHidden ? "➖" : "➕";
+}
 
 
 </script>
@@ -720,7 +820,7 @@ function showPoem(poemId) {
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 		  setTimeout(function () {
-			alert("Lapochka, do you know that I love you very very much? 💜💕");
+			alert("Lapochka, did you remember to take care of yourself today? If you haven't, please do. I love you, very very much!  💜💕");
 		  }, 35000);
 		});
 	  </script>
