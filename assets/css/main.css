@@ -9002,18 +9002,4 @@ section {
 	font-size: 0.95em;
   }
 
-  .gallery.style2.medium.lightbox {
-  display: flex;
-    width: auto;
-    max-width: 100%;
-    max-height: 100%; /* You can reduce or increase this */
-    object-fit: contain; /* changed from 'cover' */
-    border-radius: 1rem;
-    margin-top: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 
