@@ -14,6 +14,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -23,15 +25,15 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Nika's Wonderland</h1>
-							<p class="major">Welcome, lapochka! Why Wonderland? Because here I try to show how wonderful you are to me 💜💕 Hope you will like it!</p>
+							<p class="major">Welcome again, lapochka! Happy anniversary! I hope you didn't get bored of this already, I made some fun changes for you cutie patotie 😍</p>
 							<ul class="actions stacked">
 								<li><a href="#Gallery" class="button large wide smooth-scroll-middle">Get Started</a></li>
 							</ul>
 						</div>
 						<div class="image-container">
-							<img src="images/Us15.jpg" alt="The Queen of my Heart 👑" />
+							<img src="images/Us25.jpg" alt="The Queen of my Heart 👑" />
 							<div id="banner-caption" class="caption">
-								<h3>Stiiiiick to meeeeee 🍬 </h3>
+								<h3>Happy anniversary! 🥰 </h3>
 							</div>
 						</div>
 					</section>
@@ -83,6 +85,15 @@
 									</div>
 								</article>
 								<article>
+									<a href="images/Us23.jpg" class="image">
+										<img src="images/Us23.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Cinema time</h3>
+										<p>I'm still not sure what the fuck we watched :D  </p>
+									</div>
+								</article>
+								<article>
 									<a href="images/Us3.jpg" class="image">
 										<img src="images/Us3.jpg" alt="" />
 									</a>
@@ -106,6 +117,15 @@
 									<div class="caption">
 										<h3>Master and Margarita</h3>
 										<p>Even though I didn't understand anything, hearing you laugh was worth it all.</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/Us24.jpg" class="image">
+										<img src="images/Us24.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>At Stromovka</h3>
+										<p>And behind, a graphical representation of me when you  </p>
 									</div>
 								</article>
                                 <article>
@@ -145,6 +165,15 @@
 									</div>
 								</article>
 								<article>
+									<a href="images/Her31.jpg" class="image">
+										<img src="images/Her31.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Beautiful weather</h3>
+										<p>And beautifuler lapochka 😍 </p>
+									</div>
+								</article>
+								<article>
 									<a href="images/Her22.jpg" class="image">
 										<img src="images/Her22.jpg" alt="" />
 									</a>
@@ -178,6 +207,15 @@
 									<div class="caption">
 										<h3>The funniest</h3>
 										<p>This picture never fails to make my laugh</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/Her32.jpg" class="image">
+										<img src="images/Her32.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>"Join the cozy side of the force!"</h3>
+										<p>I'm very glad you like it :) </p>
 									</div>
 								</article>
 								<article>
@@ -618,6 +656,7 @@
 <section id="poem-of-the-month" class="section">
 	<h2>Poem of the Month</h2>
 	<div class="month-selector">
+		<button onclick="showPoem('poem-november-2025')">November 2025</button>
 		<button onclick="showPoem('poem-october-2025')">October 2025</button>
 		<button onclick="showPoem('poem-september-2025')">September 2025</button>
 		<button onclick="showPoem('poem-august-2025')">August 2025</button>
@@ -840,6 +879,30 @@
 		<p class="poem-author">"The confirmation" - By Edwin Muir </p>
 		<img src="images/Poem8.jpg" class="poem-image">
 	  </div>
+
+	  <div class="poem-card" id="poem-november-2025">
+		<h3>November 2025</h3>
+		<p class="poem-content">
+		i carry your heart with me(i carry it in<br>
+		my heart)i am never without it(anywhere<br>
+		i go you go,my dear;and whatever is done<br>
+		by only me is your doing,my darling)<br>
+															i fear<br>
+		no fate(for you are my fate,my sweet)i want<br>
+		no world(for beautiful you are my world,my true)<br>
+		and it’s you are whatever a moon has always meant<br>
+		and whatever a sun will always sing is you<br>
+<br>
+		here is the deepest secret nobody knows<br>
+		(here is the root of the root and the bud of the bud<br>
+		and the sky of the sky of a tree called life;which grows<br>
+		higher than soul can hope or mind can hide)<br>
+		and this is the wonder that's keeping the stars apart<br>
+
+		i carry your heart(i carry it in my heart)<br>
+		<p class="poem-author">"[i carry your heart with me(i carry it in]" - By E. E. Cummings </p>
+		<img src="images/Poem9.jpg" class="poem-image">
+	  </div>
   
 
   </section>
@@ -935,8 +998,9 @@
 										<div class="popup-content">
 											<span class="close-btn" onclick="closePopup()">&times;</span>
 											<h2>Lapochka 💜</h2>
-											<p>Whatever hardship we face, I want to face it together. Thank you for being in my life, for supporting me, and for sharing this path with me. I love you very very much 💜💜💜</p>
-											 <img src="images\Us22.jpg" alt="Sweet moment" class="popup-image">
+											<p>Happy Anniversary lyubimaya! For many many more years of love, support, company, fun (both kinds, wink wink) and all the things that makes us, us. I coudn't ask for anything else, other than you. I love you very very much 💜💜💜</p>
+											 <video controls width="100%" class="popup-video">
+     										 <source src="images/0f0b287f9d12778ed57e68a1249cf7a4.mp4" type="video/mp4">
 										</div>
 									</div>
 											<hr />
@@ -1137,12 +1201,84 @@ function togglePlaces() {
 		<!-- Note: Only needed for demo purposes. Delete for production sites. -->
 			<script src="assets/js/demo.js"></script>
 
+		<!-- Hearts Canvas -->
+<canvas id="heartsCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000;"></canvas>
+
+<!-- Secret Heart Popup -->
+<div id="secretHeartPopup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closeSecretPopup()">&times;</span>
+        <h2>You found the hidden heart 💜</h2>
+        <p>That’s how I know you always find your way to my love 💖</p>
+    </div>
+</div>
+
+
 	</body>
 	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-		  setTimeout(function () {
-			alert("I'm proud of you every day, no matter what you do or don't 💜 I love you lapochka! 💕");
-		  }, 35000);
-		});
-	  </script>
+		window.addEventListener("load", () => {
+  const canvas = document.getElementById("heartsCanvas");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+
+  const hearts = [];
+
+  function createHeart() {
+    hearts.push({
+      x: Math.random() * canvas.width,
+      y: canvas.height + 20,
+      size: Math.random() * 10 + 5, // smaller hearts
+      speed: Math.random() * 1 + 0.3,
+      opacity: Math.random() * 0.5 + 0.5,
+      drift: Math.random() * 0.5 - 0.25,
+      color: `rgba(170, 85, 255, ${Math.random() * 0.4 + 0.4})` // soft purple tones 💜
+    });
+  }
+
+  function drawHeart(h) {
+    ctx.save();
+    ctx.translate(h.x, h.y);
+    ctx.scale(h.size / 20, h.size / 20);
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.bezierCurveTo(0, -3, -5, -15, -15, -15);
+    ctx.bezierCurveTo(-35, -15, -35, 10, -35, 10);
+    ctx.bezierCurveTo(-35, 25, -15, 40, 0, 55);
+    ctx.bezierCurveTo(15, 40, 35, 25, 35, 10);
+    ctx.bezierCurveTo(35, 10, 35, -15, 15, -15);
+    ctx.bezierCurveTo(5, -15, 0, -3, 0, 0);
+    ctx.fillStyle = h.color;
+    ctx.fill();
+    ctx.restore();
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    hearts.forEach(h => {
+      h.y -= h.speed;
+      h.x += h.drift;
+      drawHeart(h);
+    });
+    for (let i = hearts.length - 1; i >= 0; i--) {
+      if (hearts[i].y < -50) hearts.splice(i, 1);
+    }
+    requestAnimationFrame(animate);
+  }
+
+  // Delay hearts animation by 10 seconds
+  setTimeout(() => {
+    setInterval(createHeart, 400);
+    animate();
+  }, 10000);
+});
+
+
+</script>
 </html>
