@@ -430,6 +430,80 @@ window.addEventListener("click", function (event) {
     }
 });
 
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    confetti({
+      particleCount: 200,
+      spread: 120,
+      origin: { y: 0.6 },
+    });
+  }, 9500); // 10 seconds delay
+});
+
+
+
+window.addEventListener("load", () => {
+  const canvas = document.getElementById("heartsCanvas");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resizeCanvas();
+  window.addEventListener("resize", resizeCanvas);
+
+  const hearts = [];
+
+  function createHeart() {
+    hearts.push({
+      x: Math.random() * canvas.width,
+      y: canvas.height + 20,
+      size: Math.random() * 10 + 5, // smaller hearts
+      speed: Math.random() * 1 + 0.3,
+      opacity: Math.random() * 0.5 + 0.5,
+      drift: Math.random() * 0.5 - 0.25,
+      color: `rgba(170, 85, 255, ${Math.random() * 0.4 + 0.4})` // soft purple tones 💜
+    });
+  }
+
+  function drawHeart(h) {
+    ctx.save();
+    ctx.translate(h.x, h.y);
+    ctx.scale(h.size / 20, h.size / 20);
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.bezierCurveTo(0, -3, -5, -15, -15, -15);
+    ctx.bezierCurveTo(-35, -15, -35, 10, -35, 10);
+    ctx.bezierCurveTo(-35, 25, -15, 40, 0, 55);
+    ctx.bezierCurveTo(15, 40, 35, 25, 35, 10);
+    ctx.bezierCurveTo(35, 10, 35, -15, 15, -15);
+    ctx.bezierCurveTo(5, -15, 0, -3, 0, 0);
+    ctx.fillStyle = h.color;
+    ctx.fill();
+    ctx.restore();
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    hearts.forEach(h => {
+      h.y -= h.speed;
+      h.x += h.drift;
+      drawHeart(h);
+    });
+    for (let i = hearts.length - 1; i >= 0; i--) {
+      if (hearts[i].y < -50) hearts.splice(i, 1);
+    }
+    requestAnimationFrame(animate);
+  }
+
+  // Delay hearts animation by 10 seconds
+  setTimeout(() => {
+    setInterval(createHeart, 400);
+    animate();
+  }, 10000);
+});
 
 
 })(jQuery);
