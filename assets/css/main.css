@@ -9011,3 +9011,107 @@ section {
   pointer-events: none;
   z-index: 999;
 }
+
+/* Snowflakes container */
+.snowflake {
+  position: fixed;
+  top: -50px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  user-select: none;
+  pointer-events: none;
+  z-index: 9999;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Falling animation */
+@keyframes fall {
+  0% {
+    transform: translateY(-50px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+.gift {
+  position: fixed;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+
+.year-group {
+  margin-bottom: 20px;
+}
+
+.year-toggle {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background: #c8acee;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.year-toggle:hover {
+  background: #b38add;
+}
+
+.year-content {
+  display: none;
+  padding: 15px 0;
+
+  /* Make the buttons look like a proper grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+
+  justify-items: center;
+}
+
+.year-content button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  background: #f3e8ff;
+  border: 1px solid #d2b8f7;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.year-content button:hover {
+  background: #e6d4ff;
+  transform: translateY(-2px);
+}
+
+
+.month-buttons {
+  display: none; /* hide initially */
+  margin: 10px 0 20px 20px; /* indent inside the year */
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.month-buttons button {
+  display: inline-block;
+  margin: 5px 5px 5px 0;
+}
+
+.year-btn {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
