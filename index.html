@@ -14,7 +14,6 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
 	<body class="is-preload">
 
@@ -25,15 +24,15 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Nika's Wonderland</h1>
-							<p class="major">Welcome again, lapochka! Happy anniversary! I hope you didn't get bored of this already, I made some fun changes for you cutie patotie 😍</p>
+							<p class="major">Welcome again, lapochka! Now with Christmas theme for you, sexikus gorgeousikus 😍</p>
 							<ul class="actions stacked">
 								<li><a href="#Gallery" class="button large wide smooth-scroll-middle">Get Started</a></li>
 							</ul>
 						</div>
 						<div class="image-container">
-							<img src="images/Us25.jpg" alt="The Queen of my Heart 👑" />
+							<img src="images/Us26.jpg" alt="The Queen of my Heart 👑" />
 							<div id="banner-caption" class="caption">
-								<h3>Happy anniversary! 🥰 </h3>
+								<h3>The teenage couple 🥰 </h3>
 							</div>
 						</div>
 					</section>
@@ -111,6 +110,15 @@
 									</div>
 								</article>
 								<article>
+									<a href="images/Her33.jpg" class="image">
+										<img src="images/Her33.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Miss Earth 2025</h3>
+										<p>The sexiest, beautifulest, gorgeousest! 😍</p>
+									</div>
+								</article>
+								<article>
 									<a href="images/Us5.jpg" class="image">
 										<img src="images/Us5.jpg" alt="" />
 									</a>
@@ -153,6 +161,15 @@
 									<div class="caption">
 										<h3>The prrretiest and her mug</h3>
 										<p>I'm so happy you liked that mug. And that sweatshirt is really cute</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/Her34.jpg" class="image">
+										<img src="images/Her34.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Winter lapochka</h3>
+										<p>That hoodie was the best investment of my year :P  </p>
 									</div>
 								</article>
 								<article>
@@ -252,6 +269,15 @@
 									<div class="caption">
 										<h3>Cute in winter</h3>
 										<p>Be it hot or cold, you always look cute. And that hat OMG, is soooo nice</p>
+									</div>
+								</article>
+								<article>
+									<a href="images/Her35.jpg" class="image">
+										<img src="images/Her35.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>😎</h3>
+										<p>Local model heading out 😎  </p>
 									</div>
 								</article>
 								<article>
@@ -655,18 +681,37 @@
 
 <section id="poem-of-the-month" class="section">
 	<h2>Poem of the Month</h2>
-	<div class="month-selector">
-		<button onclick="showPoem('poem-november-2025')">November 2025</button>
-		<button onclick="showPoem('poem-october-2025')">October 2025</button>
-		<button onclick="showPoem('poem-september-2025')">September 2025</button>
-		<button onclick="showPoem('poem-august-2025')">August 2025</button>
-	    <button onclick="showPoem('poem-july-2025')">July 2025</button>
-		<button onclick="showPoem('poem-june-2025')">June 2025</button>
-	    <button onclick="showPoem('poem-may-2025')">May 2025</button>
-		<button onclick="showPoem('poem-april-2025')">April 2025</button>
-	  <button onclick="showPoem('poem-march-2025')">March 2025</button>
-	</div>
-  
+
+
+  <!-- Year 2025 -->
+  <div class="year-group">
+    <button class="year-btn" onclick="toggleMonths('months-2025')">2025 ▼</button>
+    <div id="months-2025" class="month-buttons">
+      <button onclick="showPoem('poem-december-2025')">December</button>
+      <button onclick="showPoem('poem-november-2025')">November</button>
+      <button onclick="showPoem('poem-october-2025')">October</button>
+      <button onclick="showPoem('poem-september-2025')">September</button>
+      <button onclick="showPoem('poem-august-2025')">August</button>
+      <button onclick="showPoem('poem-july-2025')">July</button>
+      <button onclick="showPoem('poem-june-2025')">June</button>
+      <button onclick="showPoem('poem-may-2025')">May</button>
+      <button onclick="showPoem('poem-april-2025')">April</button>
+      <button onclick="showPoem('poem-march-2025')">March</button>
+    </div>
+  </div>
+
+  <!-- Year 2026 (example) -->
+  <div class="year-group">
+    <button class="year-btn" onclick="toggleMonths('months-2026')">2026 ▼</button>
+    <div id="months-2026" class="month-buttons">
+      <button onclick="showPoem('poem-january-2026')">Under construction :P</button>
+
+      <!-- Add more months here -->
+    </div>
+  </div>
+</section>
+
+
 	<div class="poem-card" id="poem-march-2025">
 		<h3>March 2025</h3>
 		<p class="poem-content">
@@ -903,6 +948,35 @@
 		<p class="poem-author">"[i carry your heart with me(i carry it in]" - By E. E. Cummings </p>
 		<img src="images/Poem9.jpg" class="poem-image">
 	  </div>
+
+	  <div class="poem-card" id="poem-december-2025">
+		<h3>December 2025</h3>
+		<p class="poem-content">
+		There is a kind of love called maintenance<br>
+		Which stores the WD40 and knows when to use it;<br>
+		<br>
+		Which checks the insurance, and doesn’t forget<br>
+		The milkman; which remembers to plant bulbs;<br>
+		<br>
+		Which answers letters; which knows the way<br>
+		The money goes; which deals with dentists<br>
+		<br>
+		And Road Fund Tax and meeting trains,<br>
+		And postcards to the lonely; which upholds<br>
+		<br>
+		The permanently rickety elaborate<br>
+		Structures of living, which is Atlas.<br>
+		<br>
+		And maintenance is the sensible side of love,<br>
+		Which knows what time and weather are doing<br>
+		To my brickwork; insulates my faulty wiring;<br>
+		Laughs at my dryrotten jokes; remembers<br>
+		My need for gloss and grouting; which keeps<br>
+		My suspect edifice upright in air,<br>
+		As Atlas did the sky.<br>
+		<p class="poem-author">"Atlas" - By U.A. Fanthorpe </p>
+		<img src="images/Poem10.jpg" class="poem-image">
+	  </div>
   
 
   </section>
@@ -998,9 +1072,8 @@
 										<div class="popup-content">
 											<span class="close-btn" onclick="closePopup()">&times;</span>
 											<h2>Lapochka 💜</h2>
-											<p>Happy Anniversary lyubimaya! For many many more years of love, support, company, fun (both kinds, wink wink) and all the things that makes us, us. I coudn't ask for anything else, other than you. I love you very very much 💜💜💜</p>
-											 <video controls width="100%" class="popup-video">
-     										 <source src="images/0f0b287f9d12778ed57e68a1249cf7a4.mp4" type="video/mp4">
+											<p>Thank you for your support, I couldn't continue without you. I'm grateful and happy to have you in my life, and I hope to have you forever. I love you very very much 💜💜💜</p>
+     										 <img src="images/Us27.jpg" class="popup-image">
 										</div>
 									</div>
 											<hr />
@@ -1216,69 +1289,56 @@ function togglePlaces() {
 
 	</body>
 	<script>
-		window.addEventListener("load", () => {
-  const canvas = document.getElementById("heartsCanvas");
-  if (!canvas) return;
-  const ctx = canvas.getContext("2d");
+		function createSnowflake() {
+  const snowflake = document.createElement("div");
+  snowflake.classList.add("snowflake");
+  snowflake.textContent = "❄️";
 
-  function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-  resizeCanvas();
-  window.addEventListener("resize", resizeCanvas);
+  const size = Math.random() * 20 + 10;
+  snowflake.style.fontSize = size + "px";
 
-  const hearts = [];
+  snowflake.style.left = Math.random() * 100 + "vw";
+  snowflake.style.animationDuration = Math.random() * 3 + 3 + "s";
 
-  function createHeart() {
-    hearts.push({
-      x: Math.random() * canvas.width,
-      y: canvas.height + 20,
-      size: Math.random() * 10 + 5, // smaller hearts
-      speed: Math.random() * 1 + 0.3,
-      opacity: Math.random() * 0.5 + 0.5,
-      drift: Math.random() * 0.5 - 0.25,
-      color: `rgba(170, 85, 255, ${Math.random() * 0.4 + 0.4})` // soft purple tones 💜
-    });
-  }
+  document.body.appendChild(snowflake);
 
-  function drawHeart(h) {
-    ctx.save();
-    ctx.translate(h.x, h.y);
-    ctx.scale(h.size / 20, h.size / 20);
-    ctx.beginPath();
-    ctx.moveTo(0, 0);
-    ctx.bezierCurveTo(0, -3, -5, -15, -15, -15);
-    ctx.bezierCurveTo(-35, -15, -35, 10, -35, 10);
-    ctx.bezierCurveTo(-35, 25, -15, 40, 0, 55);
-    ctx.bezierCurveTo(15, 40, 35, 25, 35, 10);
-    ctx.bezierCurveTo(35, 10, 35, -15, 15, -15);
-    ctx.bezierCurveTo(5, -15, 0, -3, 0, 0);
-    ctx.fillStyle = h.color;
-    ctx.fill();
-    ctx.restore();
-  }
-
-  function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    hearts.forEach(h => {
-      h.y -= h.speed;
-      h.x += h.drift;
-      drawHeart(h);
-    });
-    for (let i = hearts.length - 1; i >= 0; i--) {
-      if (hearts[i].y < -50) hearts.splice(i, 1);
-    }
-    requestAnimationFrame(animate);
-  }
-
-  // Delay hearts animation by 10 seconds
   setTimeout(() => {
-    setInterval(createHeart, 400);
-    animate();
-  }, 10000);
-});
+    snowflake.remove();
+  }, 7000);
+}
 
+setInterval(createSnowflake, 300);
 
-</script>
+	</script>
+    <script>
+		function createGift() {
+  const gift = document.createElement("div");
+  gift.classList.add("gift");
+  gift.textContent = ["🎁", "🎄"][Math.floor(Math.random()*3)];
+
+  const size = Math.random() * 25 + 20;
+  gift.style.fontSize = size + "px";
+
+  gift.style.left = Math.random() * 100 + "vw";
+  gift.style.top = "-50px";
+
+  gift.style.animationDuration = Math.random() * 3 + 4 + "s";
+
+  document.body.appendChild(gift);
+
+  setTimeout(() => gift.remove(), 8000);
+}
+
+setInterval(createGift, 5000);
+
+function toggleMonths(id) {
+  const monthsDiv = document.getElementById(id);
+  if (monthsDiv.style.display === "flex") {
+    monthsDiv.style.display = "none";
+  } else {
+    monthsDiv.style.display = "flex";
+  }
+}
+
+	</script>
 </html>
