@@ -24,15 +24,15 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Nika's Wonderland</h1>
-							<p class="major">Welcome to 2026, another year for me to update this site and show my love 🥰 </p>
+							<p class="major">Happy Valentine's Day, sexikus gorgeousikus 🥰 </p>
 							<ul class="actions stacked">
 								<li><a href="#Gallery" class="button large wide smooth-scroll-middle">Get Started</a></li>
 							</ul>
 						</div>
 						<div class="image-container">
-							<img src="images/Us30.jpg" alt="The Queen of my Heart 👑" />
+							<img src="images/Us32.jpg" alt="The Queen of my Heart 👑" />
 							<div id="banner-caption" class="caption">
-								<h3>The teenage couple 🥰 And just a dog 🐕 </h3>
+								<h3>The teenage couple isn't real, the can't hurt you 🤣 </h3>
 							</div>
 						</div>
 					</section>
@@ -47,6 +47,15 @@
 
 						<!-- Gallery -->
 							<div class="gallery style2 medium lightbox onscroll-fade-in">
+									<article>
+									<a href="images/Us1.jpg" class="image">
+										<img src="images/Her39.jpg" alt="" />
+									</a>
+									<div class="caption">
+										<h3>Polene Girl</h3>
+										<p>Slaaaaaaay queen</p>
+									</div>
+								</article>
 								<article>
 									<a href="images/Us1.jpg" class="image">
 										<img src="images/Us1.jpg" alt="" />
@@ -742,7 +751,7 @@
     <button class="year-btn" onclick="toggleMonths('months-2026')">2026 ▼</button>
     <div id="months-2026" class="month-buttons">
       <button onclick="showPoem('poem-january-2026')">January</button>
-
+	  <button onclick="showPoem('poem-february-2026')">February</button>
       <!-- Add more months here -->
     </div>
   </div>
@@ -1035,7 +1044,41 @@
 		<p class="poem-author">"Scaffolding" - By Seamus Heaney </p>
 		<img src="images/Poem11.jpg" class="poem-image">
 	  </div>
-  
+  		
+	  <div class="poem-card" id="poem-february-2026">
+		<h3>February 2026</h3>
+		<p class="poem-content">
+		When I met you,<br>
+		I didn’t know my life would change so quietly.<br>
+		<br>
+		When I met you,<br>
+		I didn’t know I could feel this understood,<br>
+		this loved,<br>
+		this supported.<br>
+		<br>
+		When I met you,<br>
+		I didn’t know that waiting at a traffic light,<br>
+		hugging you and smiling,<br>
+		would become my favorite place.<br>
+		<br>
+		When I met you,<br>
+		I didn’t know holding your hand<br>
+		could quiet all the noise,<br>
+		inside and out.<br>
+		<br>
+		When I met you,<br>
+		I didn’t know that just seeing you<br>
+		could turn a dark day<br>
+		into something filled with your light.<br>
+		<br>
+		When I met you,<br>
+		I didn’t know I would want to love you<br>
+		for the rest of my life.<br>
+		<br>
+		But I do.
+		<p class="poem-author">"When I met you" - By your kotik (Yes, I wrote it) </p>
+		<img src="images/Poem12.jpg" class="poem-image">
+	  </div>
 
   </section>
   
@@ -1130,8 +1173,8 @@
 										<div class="popup-content">
 											<span class="close-btn" onclick="closePopup()">&times;</span>
 											<h2>Lapochka 💜</h2>
-											<p>Happy to be able to share with you another year, hopefully of many. You are the bestest, and I wouldn't give you up for anything in this world. I love you very very much 💜💜💜</p>
-     										 <img src="images/Us28.jpg" class="popup-image">
+											<p>Happy Valentine's day! I hope you know I love you and value you very very much 💜💜💜</p>
+     										 <img src="images/Us33.jpg" class="popup-image">
 										</div>
 									</div>
 											<hr />
@@ -1332,37 +1375,17 @@ function togglePlaces() {
 		<!-- Note: Only needed for demo purposes. Delete for production sites. -->
 			<script src="assets/js/demo.js"></script>
 
-	
+	<canvas id="heartsCanvas"></canvas>
+
 
 
 	</body>
-	<script>
-		function createSnowflake() {
-  const snowflake = document.createElement("div");
-  snowflake.classList.add("snowflake");
-  snowflake.textContent = "❄️";
 
-  const size = Math.random() * 20 + 10;
-  snowflake.style.fontSize = size + "px";
-
-  snowflake.style.left = Math.random() * 100 + "vw";
-  snowflake.style.animationDuration = Math.random() * 3 + 3 + "s";
-
-  document.body.appendChild(snowflake);
-
-  setTimeout(() => {
-    snowflake.remove();
-  }, 7000);
-}
-
-setInterval(createSnowflake, 300);
-
-	</script>
     <script>
 		function createGift() {
   const gift = document.createElement("div");
   gift.classList.add("gift");
-  gift.textContent = ["🖤", "💜"][Math.floor(Math.random()*3)];
+  gift.textContent = ["🖤", "💜", "🥰"][Math.floor(Math.random()*3)];
 
   const size = Math.random() * 25 + 20;
   gift.style.fontSize = size + "px";
@@ -1389,4 +1412,6 @@ function toggleMonths(id) {
 }
 
 	</script>
+
+	
 </html>
